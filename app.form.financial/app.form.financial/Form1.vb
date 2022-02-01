@@ -49,4 +49,68 @@
     Private Sub PAYMENTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PAYMENTToolStripMenuItem.Click
         PAYMENT()
     End Sub
+
+    Private Sub EJEMPLOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EJEMPLOToolStripMenuItem.Click
+        Dim TotPmts
+        Dim kondition As String
+        TotPmts = InputBox("Ingresa un monto ")
+        kondition = InputBox("Ingresa una kondition 1")
+        MsgBox("Your GetJahreszinsByKondition is " & GetJahreszinsByKondition(kondition, TotPmts) & ".")
+    End Sub
+
+    Private Function GetJahreszinsByKondition(ByVal kondition As String, ByVal amount As Decimal) As Decimal
+
+        Dim DictDict As New Dictionary(Of String, Dictionary(Of String, Decimal))
+        Dim param As String
+        Dim result, jahreszins As Decimal
+        If (amount <= 15000) Then
+            param = "param1"
+        ElseIf (amount > 15000 And amount <= 50000) Then
+            param = "param2"
+        ElseIf (amount > 50000 And amount <= 100000) Then
+            param = "param3"
+        ElseIf (amount > 100000) Then
+            param = "param4"
+        Else
+            param = "param5"
+        End If
+
+#Region "Loading Dictionary"
+        DictDict = New Dictionary(Of String, Dictionary(Of String, Decimal)) From
+        {
+             {
+               "kondition 1",
+                  New Dictionary(Of String, Decimal) From
+                    {
+                         {"param1", 4.5},
+                         {"param2", 3.75},
+                         {"param3", 3.25},
+                         {"param4", 2.75}
+                    }
+             },
+              {
+               "kondition 2",
+                  New Dictionary(Of String, Decimal) From
+                    {
+                        {"param1", 5.5},
+                        {"param2", 4.75},
+                        {"param3", 4.25},
+                        {"param4", 3.75}
+                    }
+             },
+              {
+               "kondition 3",
+                  New Dictionary(Of String, Decimal) From
+                    {
+                       {"param1", 6.5},
+                       {"param2", 5.0},
+                       {"param3", 4.5},
+                       {"param4", 4.0}
+                    }
+             }
+        }
+#End Region
+        jahreszins = amount * DictDict.Item(kondition).Item(param)
+        Return jahreszins
+    End Function
 End Class

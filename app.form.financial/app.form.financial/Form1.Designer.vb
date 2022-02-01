@@ -26,12 +26,14 @@ Partial Class Form1
         Me.FUNCIONESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RATEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PAYMENTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DICCIONARIOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EJEMPLOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FUNCIONESToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FUNCIONESToolStripMenuItem, Me.DICCIONARIOToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1441, 24)
@@ -57,6 +59,19 @@ Partial Class Form1
         Me.PAYMENTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PAYMENTToolStripMenuItem.Text = "PAYMENT"
         '
+        'DICCIONARIOToolStripMenuItem
+        '
+        Me.DICCIONARIOToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EJEMPLOToolStripMenuItem})
+        Me.DICCIONARIOToolStripMenuItem.Name = "DICCIONARIOToolStripMenuItem"
+        Me.DICCIONARIOToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+        Me.DICCIONARIOToolStripMenuItem.Text = "DICCIONARIO"
+        '
+        'EJEMPLOToolStripMenuItem
+        '
+        Me.EJEMPLOToolStripMenuItem.Name = "EJEMPLOToolStripMenuItem"
+        Me.EJEMPLOToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.EJEMPLOToolStripMenuItem.Text = "EJEMPLO"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -77,4 +92,6 @@ Partial Class Form1
     Friend WithEvents FUNCIONESToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RATEToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PAYMENTToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DICCIONARIOToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents EJEMPLOToolStripMenuItem As ToolStripMenuItem
 End Class
