@@ -61,7 +61,7 @@
     Private Function GetJahreszinsByKondition(ByVal kondition As String, ByVal amount As Decimal) As Decimal
 
         Dim DictDict As New Dictionary(Of String, Dictionary(Of String, Decimal))
-        Dim param As String
+        Dim param As String = String.Empty;
         Dim result, jahreszins As Decimal
         If (amount <= 15000) Then
             param = "param1"
