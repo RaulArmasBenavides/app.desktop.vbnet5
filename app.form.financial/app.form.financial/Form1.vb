@@ -60,7 +60,8 @@
 
     Private Function GetJahreszinsByKondition(ByVal kondition As String, ByVal amount As Decimal) As Decimal
 
-        Dim DictDict As New Dictionary(Of String, Dictionary(Of String, Decimal))
+        Dim MyDict As New Dictionary(Of String, Dictionary(Of String, Decimal))
+        'Private ContractsDocumentDictionary As New Dictionary(Of String, String)(System.StringComparer.OrdinalIgnoreCase) to ignore case sensitive
         Dim param As String = String.Empty
         Dim result, jahreszins As Decimal
         If (amount <= 15000) Then
@@ -76,7 +77,7 @@
         End If
 
 #Region "Loading Dictionary"
-        DictDict = New Dictionary(Of String, Dictionary(Of String, Decimal)) From
+        MyDict = New Dictionary(Of String, Dictionary(Of String, Decimal)) From
         {
              {
                "kondition 1",
@@ -110,7 +111,7 @@
              }
         }
 #End Region
-        jahreszins = amount * DictDict.Item(kondition).Item(param)
+        jahreszins = amount * MyDict.Item(kondition).Item(param)
         Return jahreszins
     End Function
 
@@ -138,4 +139,6 @@
         Next
 
     End Sub
+
+
 End Class

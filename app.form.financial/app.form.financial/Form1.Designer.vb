@@ -26,15 +26,17 @@ Partial Class Form1
         Me.FUNCIONESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RATEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PAYMENTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FINANZASFUNCIONESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DICCIONARIOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EJEMPLOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ENUMERATIONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ASPOSEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FUNCIONESToolStripMenuItem, Me.DICCIONARIOToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FUNCIONESToolStripMenuItem, Me.DICCIONARIOToolStripMenuItem, Me.ASPOSEToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1441, 24)
@@ -43,41 +45,53 @@ Partial Class Form1
         '
         'FUNCIONESToolStripMenuItem
         '
-        Me.FUNCIONESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RATEToolStripMenuItem, Me.PAYMENTToolStripMenuItem})
+        Me.FUNCIONESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RATEToolStripMenuItem, Me.PAYMENTToolStripMenuItem, Me.FINANZASFUNCIONESToolStripMenuItem})
         Me.FUNCIONESToolStripMenuItem.Name = "FUNCIONESToolStripMenuItem"
-        Me.FUNCIONESToolStripMenuItem.Size = New System.Drawing.Size(83, 20)
-        Me.FUNCIONESToolStripMenuItem.Text = "FUNCIONES"
+        Me.FUNCIONESToolStripMenuItem.Size = New System.Drawing.Size(137, 20)
+        Me.FUNCIONESToolStripMenuItem.Text = "FINANCIAL METHODS"
         '
         'RATEToolStripMenuItem
         '
         Me.RATEToolStripMenuItem.Name = "RATEToolStripMenuItem"
-        Me.RATEToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.RATEToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.RATEToolStripMenuItem.Text = "RATE"
         '
         'PAYMENTToolStripMenuItem
         '
         Me.PAYMENTToolStripMenuItem.Name = "PAYMENTToolStripMenuItem"
-        Me.PAYMENTToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
+        Me.PAYMENTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PAYMENTToolStripMenuItem.Text = "PAYMENT"
+        '
+        'FINANZASFUNCIONESToolStripMenuItem
+        '
+        Me.FINANZASFUNCIONESToolStripMenuItem.Name = "FINANZASFUNCIONESToolStripMenuItem"
+        Me.FINANZASFUNCIONESToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FINANZASFUNCIONESToolStripMenuItem.Text = "X"
         '
         'DICCIONARIOToolStripMenuItem
         '
         Me.DICCIONARIOToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EJEMPLOToolStripMenuItem, Me.ENUMERATIONToolStripMenuItem})
         Me.DICCIONARIOToolStripMenuItem.Name = "DICCIONARIOToolStripMenuItem"
-        Me.DICCIONARIOToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
-        Me.DICCIONARIOToolStripMenuItem.Text = "DICCIONARIO"
+        Me.DICCIONARIOToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
+        Me.DICCIONARIOToolStripMenuItem.Text = "DICTIONARY"
         '
         'EJEMPLOToolStripMenuItem
         '
         Me.EJEMPLOToolStripMenuItem.Name = "EJEMPLOToolStripMenuItem"
         Me.EJEMPLOToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EJEMPLOToolStripMenuItem.Text = "EJEMPLO"
+        Me.EJEMPLOToolStripMenuItem.Text = "SAMPLE"
         '
         'ENUMERATIONToolStripMenuItem
         '
         Me.ENUMERATIONToolStripMenuItem.Name = "ENUMERATIONToolStripMenuItem"
         Me.ENUMERATIONToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ENUMERATIONToolStripMenuItem.Text = "ENUMERATION"
+        '
+        'ASPOSEToolStripMenuItem
+        '
+        Me.ASPOSEToolStripMenuItem.Name = "ASPOSEToolStripMenuItem"
+        Me.ASPOSEToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
+        Me.ASPOSEToolStripMenuItem.Text = "DOCUMENTS"
         '
         'Form1
         '
@@ -102,4 +116,6 @@ Partial Class Form1
     Friend WithEvents DICCIONARIOToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EJEMPLOToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ENUMERATIONToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FINANZASFUNCIONESToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ASPOSEToolStripMenuItem As ToolStripMenuItem
 End Class
