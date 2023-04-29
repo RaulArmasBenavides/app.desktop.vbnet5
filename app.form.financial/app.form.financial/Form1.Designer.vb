@@ -22,91 +22,137 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.FUNCIONESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RATEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PAYMENTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FINANZASFUNCIONESToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DICCIONARIOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EJEMPLOToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ENUMERATIONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ASPOSEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1.SuspendLayout()
-        Me.SuspendLayout()
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FUNCIONESToolStripMenuItem, Me.DICCIONARIOToolStripMenuItem, Me.ASPOSEToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1441, 24)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'FUNCIONESToolStripMenuItem
-        '
-        Me.FUNCIONESToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RATEToolStripMenuItem, Me.PAYMENTToolStripMenuItem, Me.FINANZASFUNCIONESToolStripMenuItem})
-        Me.FUNCIONESToolStripMenuItem.Name = "FUNCIONESToolStripMenuItem"
-        Me.FUNCIONESToolStripMenuItem.Size = New System.Drawing.Size(137, 20)
-        Me.FUNCIONESToolStripMenuItem.Text = "FINANCIAL METHODS"
-        '
-        'RATEToolStripMenuItem
-        '
-        Me.RATEToolStripMenuItem.Name = "RATEToolStripMenuItem"
-        Me.RATEToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.RATEToolStripMenuItem.Text = "RATE"
-        '
-        'PAYMENTToolStripMenuItem
-        '
-        Me.PAYMENTToolStripMenuItem.Name = "PAYMENTToolStripMenuItem"
-        Me.PAYMENTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.PAYMENTToolStripMenuItem.Text = "PAYMENT"
-        '
-        'FINANZASFUNCIONESToolStripMenuItem
-        '
-        Me.FINANZASFUNCIONESToolStripMenuItem.Name = "FINANZASFUNCIONESToolStripMenuItem"
-        Me.FINANZASFUNCIONESToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FINANZASFUNCIONESToolStripMenuItem.Text = "X"
-        '
-        'DICCIONARIOToolStripMenuItem
-        '
-        Me.DICCIONARIOToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EJEMPLOToolStripMenuItem, Me.ENUMERATIONToolStripMenuItem})
-        Me.DICCIONARIOToolStripMenuItem.Name = "DICCIONARIOToolStripMenuItem"
-        Me.DICCIONARIOToolStripMenuItem.Size = New System.Drawing.Size(87, 20)
-        Me.DICCIONARIOToolStripMenuItem.Text = "DICTIONARY"
-        '
-        'EJEMPLOToolStripMenuItem
-        '
-        Me.EJEMPLOToolStripMenuItem.Name = "EJEMPLOToolStripMenuItem"
-        Me.EJEMPLOToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.EJEMPLOToolStripMenuItem.Text = "SAMPLE"
-        '
-        'ENUMERATIONToolStripMenuItem
-        '
-        Me.ENUMERATIONToolStripMenuItem.Name = "ENUMERATIONToolStripMenuItem"
-        Me.ENUMERATIONToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.ENUMERATIONToolStripMenuItem.Text = "ENUMERATION"
-        '
-        'ASPOSEToolStripMenuItem
-        '
-        Me.ASPOSEToolStripMenuItem.Name = "ASPOSEToolStripMenuItem"
-        Me.ASPOSEToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
-        Me.ASPOSEToolStripMenuItem.Text = "DOCUMENTS"
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1441, 545)
-        Me.Controls.Add(Me.MenuStrip1)
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        MenuStrip1 = New MenuStrip()
+        FUNCIONESToolStripMenuItem = New ToolStripMenuItem()
+        RATEToolStripMenuItem = New ToolStripMenuItem()
+        PAYMENTToolStripMenuItem = New ToolStripMenuItem()
+        FINANZASFUNCIONESToolStripMenuItem = New ToolStripMenuItem()
+        DICCIONARIOToolStripMenuItem = New ToolStripMenuItem()
+        EJEMPLOToolStripMenuItem = New ToolStripMenuItem()
+        ENUMERATIONToolStripMenuItem = New ToolStripMenuItem()
+        ASPOSEToolStripMenuItem = New ToolStripMenuItem()
+        MATHToolStripMenuItem = New ToolStripMenuItem()
+        txtNumeroSinRedondear = New TextBox()
+        txtNumeroRedondeado = New TextBox()
+        Button1 = New Button()
+        Button2 = New Button()
+        MenuStrip1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' MenuStrip1
+        ' 
+        MenuStrip1.Items.AddRange(New ToolStripItem() {FUNCIONESToolStripMenuItem, DICCIONARIOToolStripMenuItem, ASPOSEToolStripMenuItem, MATHToolStripMenuItem})
+        MenuStrip1.Location = New Point(0, 0)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(1441, 24)
+        MenuStrip1.TabIndex = 0
+        MenuStrip1.Text = "MenuStrip1"
+        ' 
+        ' FUNCIONESToolStripMenuItem
+        ' 
+        FUNCIONESToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {RATEToolStripMenuItem, PAYMENTToolStripMenuItem, FINANZASFUNCIONESToolStripMenuItem})
+        FUNCIONESToolStripMenuItem.Name = "FUNCIONESToolStripMenuItem"
+        FUNCIONESToolStripMenuItem.Size = New Size(137, 20)
+        FUNCIONESToolStripMenuItem.Text = "FINANCIAL METHODS"
+        ' 
+        ' RATEToolStripMenuItem
+        ' 
+        RATEToolStripMenuItem.Name = "RATEToolStripMenuItem"
+        RATEToolStripMenuItem.Size = New Size(126, 22)
+        RATEToolStripMenuItem.Text = "RATE"
+        ' 
+        ' PAYMENTToolStripMenuItem
+        ' 
+        PAYMENTToolStripMenuItem.Name = "PAYMENTToolStripMenuItem"
+        PAYMENTToolStripMenuItem.Size = New Size(126, 22)
+        PAYMENTToolStripMenuItem.Text = "PAYMENT"
+        ' 
+        ' FINANZASFUNCIONESToolStripMenuItem
+        ' 
+        FINANZASFUNCIONESToolStripMenuItem.Name = "FINANZASFUNCIONESToolStripMenuItem"
+        FINANZASFUNCIONESToolStripMenuItem.Size = New Size(126, 22)
+        FINANZASFUNCIONESToolStripMenuItem.Text = "X"
+        ' 
+        ' DICCIONARIOToolStripMenuItem
+        ' 
+        DICCIONARIOToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {EJEMPLOToolStripMenuItem, ENUMERATIONToolStripMenuItem})
+        DICCIONARIOToolStripMenuItem.Name = "DICCIONARIOToolStripMenuItem"
+        DICCIONARIOToolStripMenuItem.Size = New Size(87, 20)
+        DICCIONARIOToolStripMenuItem.Text = "DICTIONARY"
+        ' 
+        ' EJEMPLOToolStripMenuItem
+        ' 
+        EJEMPLOToolStripMenuItem.Name = "EJEMPLOToolStripMenuItem"
+        EJEMPLOToolStripMenuItem.Size = New Size(155, 22)
+        EJEMPLOToolStripMenuItem.Text = "SAMPLE"
+        ' 
+        ' ENUMERATIONToolStripMenuItem
+        ' 
+        ENUMERATIONToolStripMenuItem.Name = "ENUMERATIONToolStripMenuItem"
+        ENUMERATIONToolStripMenuItem.Size = New Size(155, 22)
+        ENUMERATIONToolStripMenuItem.Text = "ENUMERATION"
+        ' 
+        ' ASPOSEToolStripMenuItem
+        ' 
+        ASPOSEToolStripMenuItem.Name = "ASPOSEToolStripMenuItem"
+        ASPOSEToolStripMenuItem.Size = New Size(90, 20)
+        ASPOSEToolStripMenuItem.Text = "DOCUMENTS"
+        ' 
+        ' MATHToolStripMenuItem
+        ' 
+        MATHToolStripMenuItem.Name = "MATHToolStripMenuItem"
+        MATHToolStripMenuItem.Size = New Size(52, 20)
+        MATHToolStripMenuItem.Text = "MATH"
+        ' 
+        ' txtNumeroSinRedondear
+        ' 
+        txtNumeroSinRedondear.Location = New Point(67, 67)
+        txtNumeroSinRedondear.Name = "txtNumeroSinRedondear"
+        txtNumeroSinRedondear.Size = New Size(183, 23)
+        txtNumeroSinRedondear.TabIndex = 1
+        ' 
+        ' txtNumeroRedondeado
+        ' 
+        txtNumeroRedondeado.Location = New Point(67, 111)
+        txtNumeroRedondeado.Name = "txtNumeroRedondeado"
+        txtNumeroRedondeado.Size = New Size(183, 23)
+        txtNumeroRedondeado.TabIndex = 2
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(268, 67)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 3
+        Button1.Text = "Ceilling"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(268, 110)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 23)
+        Button2.TabIndex = 4
+        Button2.Text = "Display"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1441, 545)
+        Controls.Add(Button2)
+        Controls.Add(Button1)
+        Controls.Add(txtNumeroRedondeado)
+        Controls.Add(txtNumeroSinRedondear)
+        Controls.Add(MenuStrip1)
+        MainMenuStrip = MenuStrip1
+        Name = "Form1"
+        Text = "Form1"
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
@@ -118,4 +164,9 @@ Partial Class Form1
     Friend WithEvents ENUMERATIONToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FINANZASFUNCIONESToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ASPOSEToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MATHToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents txtNumeroSinRedondear As TextBox
+    Friend WithEvents txtNumeroRedondeado As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class

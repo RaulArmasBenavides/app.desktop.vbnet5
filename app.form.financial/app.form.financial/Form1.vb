@@ -140,5 +140,19 @@
 
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        ' Número que deseas redondear
+        Dim numero As Double = CDbl(txtNumeroSinRedondear.Text)
+        '1.23
+        ' Valor de redondeo (en este caso, 0.05)
+        Dim valorDeRedondeo As Double = 0.05
+        ' Realizar el redondeo
+        Dim resultado As Double = Math.Ceiling(numero / valorDeRedondeo) * valorDeRedondeo
+        txtNumeroRedondeado.Text = resultado.ToString()
+    End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim numero As Double = CDbl(txtNumeroSinRedondear.Text)
+        txtNumeroRedondeado.Text = numero.ToString("F2")
+    End Sub
 End Class
