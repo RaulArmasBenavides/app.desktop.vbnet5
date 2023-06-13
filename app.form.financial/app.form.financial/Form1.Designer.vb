@@ -27,6 +27,7 @@ Partial Class Form1
         RATEToolStripMenuItem = New ToolStripMenuItem()
         PAYMENTToolStripMenuItem = New ToolStripMenuItem()
         FINANZASFUNCIONESToolStripMenuItem = New ToolStripMenuItem()
+        PVToolStripMenuItem = New ToolStripMenuItem()
         DICCIONARIOToolStripMenuItem = New ToolStripMenuItem()
         EJEMPLOToolStripMenuItem = New ToolStripMenuItem()
         ENUMERATIONToolStripMenuItem = New ToolStripMenuItem()
@@ -50,7 +51,7 @@ Partial Class Form1
         ' 
         ' FUNCIONESToolStripMenuItem
         ' 
-        FUNCIONESToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {RATEToolStripMenuItem, PAYMENTToolStripMenuItem, FINANZASFUNCIONESToolStripMenuItem})
+        FUNCIONESToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {RATEToolStripMenuItem, PAYMENTToolStripMenuItem, FINANZASFUNCIONESToolStripMenuItem, PVToolStripMenuItem})
         FUNCIONESToolStripMenuItem.Name = "FUNCIONESToolStripMenuItem"
         FUNCIONESToolStripMenuItem.Size = New Size(137, 20)
         FUNCIONESToolStripMenuItem.Text = "FINANCIAL METHODS"
@@ -58,20 +59,26 @@ Partial Class Form1
         ' RATEToolStripMenuItem
         ' 
         RATEToolStripMenuItem.Name = "RATEToolStripMenuItem"
-        RATEToolStripMenuItem.Size = New Size(126, 22)
+        RATEToolStripMenuItem.Size = New Size(180, 22)
         RATEToolStripMenuItem.Text = "RATE"
         ' 
         ' PAYMENTToolStripMenuItem
         ' 
         PAYMENTToolStripMenuItem.Name = "PAYMENTToolStripMenuItem"
-        PAYMENTToolStripMenuItem.Size = New Size(126, 22)
+        PAYMENTToolStripMenuItem.Size = New Size(180, 22)
         PAYMENTToolStripMenuItem.Text = "PAYMENT"
         ' 
         ' FINANZASFUNCIONESToolStripMenuItem
         ' 
         FINANZASFUNCIONESToolStripMenuItem.Name = "FINANZASFUNCIONESToolStripMenuItem"
-        FINANZASFUNCIONESToolStripMenuItem.Size = New Size(126, 22)
+        FINANZASFUNCIONESToolStripMenuItem.Size = New Size(180, 22)
         FINANZASFUNCIONESToolStripMenuItem.Text = "X"
+        ' 
+        ' PVToolStripMenuItem
+        ' 
+        PVToolStripMenuItem.Name = "PVToolStripMenuItem"
+        PVToolStripMenuItem.Size = New Size(180, 22)
+        PVToolStripMenuItem.Text = "PV c"
         ' 
         ' DICCIONARIOToolStripMenuItem
         ' 
@@ -138,7 +145,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1441, 545)
         Controls.Add(Button2)
@@ -169,4 +176,5 @@ Partial Class Form1
     Friend WithEvents txtNumeroRedondeado As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents PVToolStripMenuItem As ToolStripMenuItem
 End Class
