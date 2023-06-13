@@ -37,6 +37,7 @@ Partial Class Form1
         txtNumeroRedondeado = New TextBox()
         Button1 = New Button()
         Button2 = New Button()
+        SAMPLEDICTIONARY2ToolStripMenuItem = New ToolStripMenuItem()
         MenuStrip1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -82,7 +83,7 @@ Partial Class Form1
         ' 
         ' DICCIONARIOToolStripMenuItem
         ' 
-        DICCIONARIOToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {EJEMPLOToolStripMenuItem, ENUMERATIONToolStripMenuItem})
+        DICCIONARIOToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {EJEMPLOToolStripMenuItem, ENUMERATIONToolStripMenuItem, SAMPLEDICTIONARY2ToolStripMenuItem})
         DICCIONARIOToolStripMenuItem.Name = "DICCIONARIOToolStripMenuItem"
         DICCIONARIOToolStripMenuItem.Size = New Size(87, 20)
         DICCIONARIOToolStripMenuItem.Text = "DICTIONARY"
@@ -90,13 +91,13 @@ Partial Class Form1
         ' EJEMPLOToolStripMenuItem
         ' 
         EJEMPLOToolStripMenuItem.Name = "EJEMPLOToolStripMenuItem"
-        EJEMPLOToolStripMenuItem.Size = New Size(155, 22)
+        EJEMPLOToolStripMenuItem.Size = New Size(195, 22)
         EJEMPLOToolStripMenuItem.Text = "SAMPLE"
         ' 
         ' ENUMERATIONToolStripMenuItem
         ' 
         ENUMERATIONToolStripMenuItem.Name = "ENUMERATIONToolStripMenuItem"
-        ENUMERATIONToolStripMenuItem.Size = New Size(155, 22)
+        ENUMERATIONToolStripMenuItem.Size = New Size(195, 22)
         ENUMERATIONToolStripMenuItem.Text = "ENUMERATION"
         ' 
         ' ASPOSEToolStripMenuItem
@@ -143,6 +144,12 @@ Partial Class Form1
         Button2.Text = "Display"
         Button2.UseVisualStyleBackColor = True
         ' 
+        ' SAMPLEDICTIONARY2ToolStripMenuItem
+        ' 
+        SAMPLEDICTIONARY2ToolStripMenuItem.Name = "SAMPLEDICTIONARY2ToolStripMenuItem"
+        SAMPLEDICTIONARY2ToolStripMenuItem.Size = New Size(195, 22)
+        SAMPLEDICTIONARY2ToolStripMenuItem.Text = "SAMPLE DICTIONARY2"
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
@@ -177,4 +184,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents PVToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SAMPLEDICTIONARY2ToolStripMenuItem As ToolStripMenuItem
 End Class

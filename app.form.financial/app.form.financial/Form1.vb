@@ -1,6 +1,5 @@
 ﻿Option Explicit On
 Option Strict On
-Imports System.Runtime.Intrinsics.X86
 
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -185,5 +184,22 @@ Public Class Form1
 
     Private Sub PVToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PVToolStripMenuItem.Click
 
+    End Sub
+
+    Private Sub SAMPLEDICTIONARY2ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SAMPLEDICTIONARY2ToolStripMenuItem.Click
+        Dim dictionaryDimensionsID As New Dictionary(Of Integer, String)
+        dictionaryDimensionsID.Add(1, "Valor 1")
+        dictionaryDimensionsID.Add(2, "Valor 2")
+
+        Dim valor1 As String = dictionaryDimensionsID.Item(1)
+        Dim valor1x As String = dictionaryDimensionsID(1)
+
+        MsgBox("El valor1 es " & valor1 & " y el valor es " & valor1x)
+
+        Dim valor2 As String = dictionaryDimensionsID.Item(2)
+        Dim valor2x As String = dictionaryDimensionsID(2)
+        MsgBox("El valor2 es " & valor2 & " y el valor es " & valor2x)
+
+        Dim valor3 As String = dictionaryDimensionsID.Item(3) 'dictionaryDimensionsID(3)
     End Sub
 End Class
